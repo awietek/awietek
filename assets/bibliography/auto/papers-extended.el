@@ -1,0 +1,32 @@
+(TeX-add-style-hook
+ "papers-extended"
+ (lambda ()
+   (LaTeX-add-bibitems
+    "2012.06589"
+    "Wietek2020"
+    "Wietek2020a"
+    "Honecker2020"
+    "Chen2020"
+    "Wietek2019"
+    "Carleo2019"
+    "Wietek2018"
+    "Wietek2017a"
+    "Nataf2016"
+    "Wietek2015"
+    "Wietek2016b"
+    "phdthesis"
+    "Anderson1987"
+    "Wen1989a"
+    "Gong2017"
+    "Huang2018"
+    "LeBlanc2015"
+    "White2009"
+    "Smith1991"
+    "Kageyama1999"
+    "Zayed2017"
+    "Zhang1988"
+    "Lee2006"
+    "Stoudenmire2010"
+    "Wietek2020b"))
+ :bibtex)
+

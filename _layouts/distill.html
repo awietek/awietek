@@ -58,13 +58,17 @@
 
     <div class="post distill">
 
+      
+
       <d-title>
-        <h1>{{ page.title }}</h1>
-        <p>{{ page.description }}</p>
+        <h1 class="card-title">{{ page.title }}</h1>
+        <p class="post-description">{{ page.description }}</p>
       </d-title>
 
+      <element hidden>
       <d-byline></d-byline>
-
+      </element>
+      
       <d-article>
         {{ content }}
       </d-article>
@@ -76,13 +80,13 @@
 
     </div>
 
+    <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}">
+    </d-bibliography>
     <!-- Footer -->
 
     {% include footer.html %}
 
   </body>
 
-  <d-bibliography src="{{ page.bibliography | prepend: '/assets/bibliography/' | relative_url }}">
-  </d-bibliography>
 
 </html>

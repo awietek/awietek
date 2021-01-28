@@ -170,7 +170,7 @@ a, table.table a {
 .social {
   text-align: center;
   .contact-icon {
-    font-size: 4rem;
+    font-size: 3rem;
     a {
       color: var(--global-icon-color);
       &:hover {
@@ -313,11 +313,11 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: $grey-color-light;
-    border-top: 1px solid $grey-color-light;
+    color: $grey-color;
+    border-top: 1px solid $grey-color;
     padding-top: 1rem;
     margin-top: 2rem;
-    margin-bottom: -2rem;
+    margin-bottom: 0rem;
     text-align: right;
   }
   ol.bibliography {
@@ -328,7 +328,7 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
       .abbr {
-        height: 2rem;
+        height: 0rem;
         margin-bottom: 0.5rem;
         abbr {
           display: inline-block;
@@ -359,8 +359,9 @@ footer.sticky-bottom {
           }
         }
         > em {
-          border-bottom: 1px solid;
-          font-style: normal;
+            // border-bottom: 1px solid;
+            font-style: italic;
+	    color: $grey-color;
         }
       }
       .links {

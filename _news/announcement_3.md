@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2020-08-14 07:59:00-0400
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+New preprint <i>Loop-gas description of the localized-magnon states on the kagome lattice with open boundary conditions</i> on <a href="https://arxiv.org/abs/2008.10614">arxiv</a>
