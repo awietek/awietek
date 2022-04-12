@@ -2,8 +2,9 @@
  "papers"
  (lambda ()
    (LaTeX-add-bibitems
+    "Wietek2022b"
     "Feng2022"
-    "Wietek2022"
+    "Wietek2022a"
     "Wietek2021b"
     "Shackleton2021"
     "Wietek2021"
