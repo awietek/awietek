@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-description: <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-quantum-physics/">Flatiron Institute, Center for Computational Quantum Physics</a>
+description: <a href="https://www.pks.mpg.de">Max Planck Institute for the Physics of Complex Systems</a>
 
 profile:
   align: right

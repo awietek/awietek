@@ -58,6 +58,7 @@ Currently, it is available for collaborators only.
 </p>
 
 <p style="text-align:left;">
+   <a href="https://github.com/awietek/hydra"> Github </a>
     <span style="float:right;">
        <img height=30px src="{{ '/assets/img/cpp-logo.svg' | relative_url }}" margin=10px>
        <img height=25px src="{{ '/assets/img/MPIlogo.gif' | relative_url }}" margin=10px>	
