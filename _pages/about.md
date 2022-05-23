@@ -32,6 +32,6 @@ Interested in pursuing a research career in computational quantum many-body phys
   - a letter of motivation
   - one or two letters of reference from previous supervisors or lecturers
 
-Please submit your application via email to [awietek@pks.mpg.de](mailto:awietek@pks.mpg.de).
+Please submit your application via email to [awietek@pks.mpg.de](mailto:awietek@pks.mpg.de). Applications are accepted until the position is filled
 
 Dated: *May 23. 2022*
