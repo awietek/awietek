@@ -20,6 +20,18 @@ To solve these questions, I am developing numerical technology to simulate quant
 
 ***Seeking Ph.D. candidates***
 
-Interested in pursuing a research career in computational quantum many-body physics? I am hiring a Ph.D. student at the Max Planck Institute for the Physics of Complex Systems in the beautiful city of Dresden. Research topics range from exotic quantum phases of matter and superconductivity in strongly correlated electron systems and frustrated quantum magnets to tensor network algorithms and high-performance computing for quantum systems. For a more detailed overview of the research pursued, see the [Research](projects.md) and [Publications](publications.md) section on this website. Please contact me at [awietek@pks.mpg.de](mailto:awietek@pks.mpg.de) me with your CV, a letter of motivation, and one or two letters of reference from previous supervisors or lecturers.
+Interested in pursuing a research career in computational quantum many-body physics? I am hiring a Ph.D. student at the Max Planck Institute for the Physics of Complex Systems in the beautiful city of Dresden. Research topics range from exotic quantum phases of matter and superconductivity in strongly correlated electron systems and frustrated quantum magnets to tensor network algorithms and high-performance computing for quantum systems. For a more detailed overview of the research pursued, see the [Research](projects.md) and [Publications](publications.md) section on this website.
+
+* Requirements
+  - Completed undergraduate studies in physics, computer science or mathematics (in the form of a M.Sc. of B.Sc. depending on the country of origin)
+  - eagerness to explore the physics of strongly correlated quantum systems
+  - eagerness to learn and advance modern computational techniques for quantum many-body physics
+
+* Application material
+  - your CV
+  - a letter of motivation
+  - one or two letters of reference from previous supervisors or lecturers
+
+Please submit your application via email to [awietek@pks.mpg.de](mailto:awietek@pks.mpg.de).
 
 Dated: *May 23. 2022*
