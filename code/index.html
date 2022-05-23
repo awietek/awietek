@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Alexander  Wietek | blank</title>
+<title>Alexander  Wietek | Code</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/code/">
 
 <!-- Theming-->
 
@@ -116,9 +116,11 @@
           
           
           
-          <li class="nav-item ">
+          <li class="nav-item active">
               <a class="nav-link" href="/code/">
                 Code
+                
+                <span class="sr-only">(current)</span>
                 
               </a>
           </li>
@@ -138,56 +140,74 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Code</h1>
+    <p class="post-description"></p>
+  </header>
 
+  <article>
+    <p>I am developing several software packages and am starting to make them publicly available as open-source projects. My philosophy is to continuously single out useful small modules from the larger research software I am using.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
+<hr />
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<h4 class="card-title">ED Basics</h4>
+<p class="card-text">
+A minimalistic code performing Exact Diagonalization written in python. It demonstrates the basics of how to build a Hilbert space, employ space group symmetries, and iteratively compute extremal eigenvalues. The code was part of a hands-on-session I held at the FOR1809 Winter School in Marburg in 2018. 
+</p>
+<p style="text-align:left;">
+   <a href="https://github.com/awietek/ed_basics"> Github </a>
+       <span style="float:right;">
+       <img height="30px" src="/assets/img/python-logo.png" margin="10px" />	
+    </span>
+</p>
 
+<hr />
 
+<h4 class="card-title">LiLA</h4>
+<p class="post-description">Lightweight Linear Algebra</p>
+<p class="card-text">
+Performing elementary linear algebra operations in C++ is unfortunately not as straightforward as in other languages. There exist several good options, like Eigen or Armadillo, but these libraries are rather extensive. With this project, I provide an easy-to-use minimalistic linear algebra library by wrapping the Blas/Lapack, Intel MKL, or Accelerate subroutines.
+</p>
+<p style="text-align:left;">
+   <a href="https://github.com/awietek/lila"> Github </a>
+    <span style="float:right;">
+       <img height="30px" src="/assets/img/cpp-logo.svg" margin="10px" />	
+    </span>
+</p>
+
+<hr />
+
+<h4 class="card-title">LiMe</h4>
+<p class="post-description">Lightweight Measurements</p>
+<p class="card-text">
+The hdf5 data format is a modern standard for scientific data sets. Its C interface is versatile, but not straightforward to use. This software project provides an intuitive C++ interface for writing scalars, vectors, and matrices to an hdf5 file, without having to deal with low-level function calls. The package also features extensible data collection, which is useful when consecutive measurements (from e.g. a Monte Carlo simulation) have to be accumulated.
+</p>
+
+<p style="text-align:left;">
+    <a href="https://github.com/awietek/lime"> Github </a>
+    <span style="float:right;">
+       <img height="30px" src="/assets/img/cpp-logo.svg" margin="10px" />
+       <img height="25px" src="/assets/img/HDF_logo.svg" margin="10px" />	
+    </span>
+</p>
+
+<hr />
+
+<h4 class="card-title">Hydra</h4>
+<p class="card-text">
+An Exact Diagonalization software package where elementary operations are parallelized for distributed memory machines. The code is designed to scale Hamiltonian matrix-vector multiplications up to several thousand cores on modern supercomputers. The design principles are described in <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.98.033309">this paper</a>. 
+Currently, it is available for collaborators only.
+</p>
+
+<p style="text-align:left;">
+   <a href="https://github.com/awietek/hydra"> Github </a>
+    <span style="float:right;">
+       <img height="30px" src="/assets/img/cpp-logo.svg" margin="10px" />
+       <img height="25px" src="/assets/img/MPIlogo.gif" margin="10px" />	
+    </span>
+</p>
+
+  </article>
 
 </div>
 

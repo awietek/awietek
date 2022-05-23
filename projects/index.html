@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Alexander  Wietek | blank</title>
+<title>Alexander  Wietek | Research</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/">
 
 <!-- Theming-->
 
@@ -98,9 +98,11 @@
           
           
           
-          <li class="nav-item ">
+          <li class="nav-item active">
               <a class="nav-link" href="/projects/">
                 Research
+                
+                <span class="sr-only">(current)</span>
                 
               </a>
           </li>
@@ -138,56 +140,75 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Research</h1>
+    <p class="post-description">An overview over my current and past research.</p>
+  </header>
+
+  <article>
+    
+<div class="table">
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<img width="220px" src="/assets/img/snapshots.png" alt="project thumbnail" align="left" style="margin:15px;" />
 
 
+
+<h2 class="card-title">Strongly correlated electrons</h2>
+
+<p class="card-text">To answer why matter behaves the way it does we need to understand how macroscopic physics emerges from the microscopic laws describing the motions of electrons and atoms. Naturally, things become interesting if particles interact strongly and their collective behavior is starkly different from the behavior of individual constituents. The strange laws of quantum mechanics describing electrons and atoms add some additional spice, but also complexity to this endeavor. I am studying fundamental models describing the physics of interacting electrons to understand how different states of matter emerge. This includes the stripe and pseudogap physics of the hole-doped Hubbard model at finite-temperature which I studied using a tensor network technique called METTS.</p>
+
+<a href="/projects/strongcorrelation/"> Read more </a>
+</div>
+<hr />
+
+<div class="table">
+
+
+<img width="220px" src="/assets/img/triangular.png" alt="project thumbnail" align="left" style="margin:15px;" />
+
+
+
+<h2 class="card-title">Frustrated Magnetism</h2>
+
+<p class="card-text">Frustrated magnets are systems where local magnetic moments cannot be properly aligned at low temperatures. The resulting strong fluctuations can cause the system to stabilize exotic states of matter. This includes several (chiral) spin liquids and valence bond solids, for which I have demonstrated that they can emerge in rather simple Heisenberg antiferromagnets.</p>
+
+<a href="/projects/frustratedmagnetism/"> Read more </a>
+</div>
+<hr />
+
+<div class="table">
+
+
+<img width="220px" src="/assets/img/shasu.png" alt="project thumbnail" align="left" style="margin:15px;" />
+
+
+
+<h2 class="card-title">Quantum typicality methods</h2>
+
+<p class="card-text">In quantum statistics, a thermal state in the canonical ensemble is represented by a Gibbs density matrix of the form \(\rho = \textrm{e}^{-\beta H}\). Several modern approaches replace the density matrix by a classical ensemble of pure quantum states, called thermal typical states. These reformulations turn out to be extremely useful for numerical simulations. I have employed variants of this technique to investigate several interesting problems, including the stripe and pseudogap physics of the Hubbard model and the thermodynamics of the Shastry-Sutherland model and SrCu<sub>2</sub>(BO<sub>3</sub>)<sub>2</sub>, which I describe in more detail here.</p>
+
+<a href="/projects/typicality/"> Read more </a>
+</div>
+<hr />
+
+<div class="table">
+
+
+<img width="220px" src="/assets/img/speedup.png" alt="project thumbnail" align="left" style="margin:15px;" />
+
+
+
+<h2 class="card-title">High Performance Computing for quantum many-body systems</h2>
+
+<p class="card-text">The quantum many-body problem is exponentially hard in the number of particles. For quantum spin systems the Hilbert space dimension scales as \(2^N\), where \(N\) denotes the number of spins. I have been working on high-performance computing aspects of exact diagonalization by developing novel algorithms for employing conservation laws and distributed memory parallelization. The implementation of these ideas led to the first exact ground state simulation of an \(N=50\) spin system.</p>
+
+<a href="/projects/highperformance/"> Read more </a>
+</div>
+<hr />
+
+
+  </article>
 
 </div>
 

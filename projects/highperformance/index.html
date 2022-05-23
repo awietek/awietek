@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Alexander  Wietek | blank</title>
+<title>Alexander  Wietek | High Performance Computing for quantum many-body systems</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -29,7 +28,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/highperformance/">
 
 <!-- Theming-->
 
@@ -49,7 +48,35 @@
 <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
 
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    
   </head>
+
+  <d-front-matter>
+    <script async type="text/json">{
+      "title": "High Performance Computing for quantum many-body systems",
+      "description": "The quantum many-body problem is exponentially hard in the number of particles. For quantum spin systems the Hilbert space dimension scales as $2^N$, where $N$ denotes the number of spins. I have been working on high-performance computing aspects of exact diagonalization by developing novel algorithms for employing conservation laws and distributed memory parallelization. The implementation of these ideas led to the first exact ground state simulation of an $N=50$ spin system.",
+      "published": "2022-05-23 15:08:48 +0200",
+      "authors": [
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
 
   <body class="fixed-top-nav ">
 
@@ -135,64 +162,66 @@
 
     <!-- Content -->
 
-    <div class="container mt-5">
-      <div class="post">
+    <div class="post distill">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
-
-
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
       
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
+
+      <d-title>
+        <h1 class="card-title">High Performance Computing for quantum many-body systems</h1>
+        <p class="post-description">The quantum many-body problem is exponentially hard in the number of particles. For quantum spin systems the Hilbert space dimension scales as $2^N$, where $N$ denotes the number of spins. I have been working on high-performance computing aspects of exact diagonalization by developing novel algorithms for employing conservation laws and distributed memory parallelization. The implementation of these ideas led to the first exact ground state simulation of an $N=50$ spin system.</p>
+      </d-title>
+
+      <element hidden>
+      <d-byline></d-byline>
+      </element>
       
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
+      <d-article>
+        <p>
+  Exact diagonalization is a fundamental and versatile technique to study
+  quantum many-body systems. Since it does not perform any approximations,
+  it can yield reliable insights if the calculations can be performed on a
+  system large enough to capture the essential physical phenomena. However,
+  due to the exponential scaling one is typically limited to a few tens of
+  electrons or spins. To extend the range of possible geometries I have
+  developed these computations towards high-performance computing during
+  my Ph.D. with Andreas Läuchli. There are two essential ingredients for
+  making these simulations possible. First, Hamiltonian symmetries like
+  space group symmetries and particle number conservation have to be
+  exploited. For this, I developed the so-called "sublattice coding algorithm"
+  which efficiently deals with a symmetry-adapted basis of the Hilbert
+  space. Second, I proposed an efficient parallelization method for
+  distributed memory machines by randomly distributing the basis of the
+  Hilbert space. More precisely, basis configurations are hashed onto
+  different MPI processes. These algorithms are described in detail in
+  Ref.<d-cite key="Wietek2018"></d-cite>. I have since been using this 
+  software as a basis to perform various other projects<d-cite key="Wietek2015,Wietek2017a,Wietek2020a,Chen2020,Wietek2020a"></d-cite>.
+</p>
+
+<div class="row">
+    <div class="col-sm-5 mt-2 mt-md-0">
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/square_50.png" alt="" title="example image" />
+    </div>
     
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+    <div class="col-sm mt-2 mt-md-1">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/speedup.png" alt="" title="example image" />
+    </div>
 
 </div>
+<div class="caption">
+   (Left) Efficient use of conservation laws and distributed memory parallelization allowed us to compute the ground state energy \( E_0 = -33.7551019315 \) of the Heisenberg model on a \(N=50\) site square lattice<d-cite key="Wietek2018"></d-cite> (Right) Strong scaling analysis of the parallelized exact diagonalization code. We observe good scaling behavior up to several thousand cores. 
+</div>
+
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
 
     </div>
 
+    <d-bibliography src="/assets/bibliography/papers-extended.bib">
+    </d-bibliography>
     <!-- Footer -->
 
     
@@ -208,30 +237,6 @@
 
 
   </body>
-
-  <!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-
-  <!-- Bootsrap & MDB scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
-
-  
-<!-- Mansory & imagesLoaded -->
-<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
-
-
-  
-
-
-<!-- Load Common JS -->
-<script src="/assets/js/common.js"></script>
-
-<!-- Load DarkMode JS -->
-<script src="/assets/js/dark_mode.js"></script>
 
 
 </html>
